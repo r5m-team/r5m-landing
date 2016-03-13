@@ -1,0 +1,27 @@
+<footer class="footer">
+  <div class="footer-wrapper">
+    <div class="flexible-container clearfix">
+      <div class="copyleft">
+        <p class="copyright__contact">&copy;
+          <%= info.year %>,
+          <%= info.copyright %></p>
+        <p class="copyright__contact"><%= info.city %></p>
+        <br/>
+        <p class="copyright__contact">
+          <span class="copyright__contact__label">телефон:</span>
+          <a href="tel:<%= info.phoneLink %>"><%- info.phone %></a>
+        </p>
+        <p class="copyright__contact">
+          <span class="copyright__contact__label">email:</span>
+          <a href="mailto:<%= info.email %>"><%= info.email %></a>
+        </p>
+      </div>
+      <div class="madein clearfix">
+        <p>
+          Сделано в
+          <a target="_blank" href="https://r5m.me">R5M group</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
