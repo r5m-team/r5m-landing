@@ -13,9 +13,10 @@ module.exports = function (options) {
 	return shell.task([
 		'mkdir -p ./dist/engine',
 		'mkdir -p ./tmp/html',
-		'mkdir -p ./bower_components',
+		'./node_modules/.bin/bower install https://github.com/milikhin/r5m-client.git#' + version,
+		'rm -rf bower_components/r5m-cms; ',
 		'git clone ssh://github.com/milikhin/r5m-client.git bower_components/r5m-cms',
-		'cd bower_components/r5m-cms; git checkout ' + tagString + ' -b working; \
-			../../node_modules/.bin/bower install'
+		'cd bower_components/r5m-cms; git checkout ' + tagString + ' -b working;',
+		'bower update'
 	]);
 };
