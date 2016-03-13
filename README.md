@@ -7,8 +7,8 @@
 
 Идея состоит в том, что есть два репозитория:
 
-1. [https://github.com/milikhin/r5m-client](R5M Client), который содержит код движка. Этот код - одинаков на всех лендингах.
-2. [https://github.com/r5m-team/r5m-landing](R5M Landing), который содержит шаблон лендинга и полезные скрипты.
+1. [R5M Client](https://github.com/milikhin/r5m-client), который содержит код движка. Этот код - одинаков на всех лендингах.
+2. [R5M Landing](https://github.com/r5m-team/r5m-landing), который содержит шаблон лендинга и полезные скрипты.
 
 ## R5M Client ##
 Движок сайта находится в *bower_components/r5m-cms*, все его зависимости - в *bower_components*.
@@ -22,7 +22,7 @@ TODO: unit-тесты
 * r5m.deployTo - адрес production-репозитория с веткой gh-pages для команды ```gulp deploy```
 * r5m.htmlFiles - список файлов из **tpl/**, которые будут скомпилированы в HTML-файлы
 * r5m.minifyHtml - если true, то генерируемые HTML-файлы будут еще и минифицированы.
-* r5m.clientVersion - тег (ветка) из репозитория [https://github.com/milikhin/r5m-client](R5M Client), соответствующая используемой версии клиентского движка. Возможные значения - **master**, **v0.0.4**
+* r5m.clientVersion - тег (ветка) из репозитория [R5M Client](https://github.com/milikhin/r5m-client), соответствующая используемой версии клиентского движка. Возможные значения - **master**, **v0.0.4**
 
 ### 2. Шаблоны ###
 Хранятся в директории *tpl*.
