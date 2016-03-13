@@ -15,7 +15,7 @@ module.exports = function (options) {
 		'mkdir -p ./tmp/html',
 		'mkdir -p ./bower_components',
 		'git clone ssh://github.com/milikhin/r5m-client.git bower_components/r5m-cms',
-		'cd bower_components/r5m-cms; dir; git checkout ' + tagString + ' -b working; \
+		'cd bower_components/r5m-cms; git checkout ' + tagString + ' -b working; \
 			../../node_modules/.bin/bower install'
 	]);
 };
