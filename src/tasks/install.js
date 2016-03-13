@@ -13,7 +13,7 @@ module.exports = function (options) {
 		'mkdir -p ./dist/engine',
 		'mkdir -p ./tmp/html',
 		'mkdir -p ./bower_components/r5m-client',
-		'git clone https://github.com/milikhin/r5m-client.git#' + version,
+		'git clone https://github.com/milikhin/r5m-client.git',
 		'cd bower_components/r5m-cms; git checkout ' + this.version + ' -b working; \
 			./node_modules/.bin/bower install'
 	]);
