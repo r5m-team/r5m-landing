@@ -4,6 +4,7 @@ var shell = require('gulp-shell');
 module.exports = function (options) {
 	var version = 'master';
 	var tagString = version;
+	var self = this;
 	if (options.packageJson.r5m.clientVersion) {
 		version = options.packageJson.r5m.clientVersion;
 		tagString = 'tags/' + version;
@@ -14,7 +15,7 @@ module.exports = function (options) {
 		'mkdir -p ./tmp/html',
 		'mkdir -p ./bower_components',
 		'git clone https://github.com/milikhin/r5m-client.git bower_components/r5m-cms',
-		'cd bower_components/r5m-cms; git checkout ' + this.version + ' -b working; \
+		'cd bower_components/r5m-cms; git checkout ' + self.version + ' -b working; \
 			./node_modules/.bin/bower install'
 	]);
 };
