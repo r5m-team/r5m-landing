@@ -16,7 +16,8 @@
     "htmlFiles": [
       "index"
     ],
-    "minifyHtml": true
+    "minifyHtml": true,
+    "clientVersion": "v0.0.4"
   },
   "dependencies": {
     "bower": "^1.7.7",

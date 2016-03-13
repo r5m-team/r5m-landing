@@ -21,6 +21,6 @@ gulp.task('assets', copyOnly());
 
 gulp.task('daemon', ['js', 'css', 'html', 'assets'], daemon());
 gulp.task('deploy', ghDeploy());
-gulp.task('install', install());
+gulp.task('install', install(options));
 
 gulp.task('default', ['daemon']);
