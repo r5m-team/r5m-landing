@@ -93,7 +93,7 @@ gulp.task('gh-files', function () {
 // Compile r5m-cms STYLES & all dependencies to dist/lp.css
 gulp.task('css', shell.task([
 	'./node_modules/.bin/r.js -o cssIn=bower_components/r5m-cms/css/all.css out=tmp/engine.css',
-	'./node_modules/.bin/r.js -o cssIn=css/project.css out=dist/engine/lp.css'
+	'./node_modules/.bin/r.js -o cssIn=css/all.css out=dist/engine/lp.css'
 ]));
 
 // Compile EJS to HTML
