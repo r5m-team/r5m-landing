@@ -20,7 +20,7 @@ gulp.task('html', htmlBuilder(options));
 gulp.task('assets', copyOnly());
 
 gulp.task('daemon', ['js', 'css', 'html', 'assets'], daemon());
-gulp.task('deploy', ghDeploy());
+gulp.task('deploy', ghDeploy(options));
 gulp.task('install', install(options));
 
 gulp.task('default', ['daemon']);
