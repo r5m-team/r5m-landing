@@ -22,7 +22,8 @@ module.exports = function (options) {
 	return function () {
 		return gulp.src('dist/**/*')
 			.pipe(ghPages({
-				"remoteUrl": getRemoteUrl(options)
+				"remoteUrl": getRemoteUrl(options),
+				"branch": options.packageJson.r5m.deployToBranch || "gh-pages"
 			}));
 	};
 };
