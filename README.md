@@ -20,6 +20,7 @@ TODO: unit-тесты
 ### 1. Package.json ###
 В package.json есть несколько специальных конфигурационных полей:
 * r5m.deployTo - адрес production-репозитория с веткой gh-pages для команды ```gulp deploy```
+* r5m.deployToBranch - ветка production-репозитория для команды ```gulp deploy``` (```gh-pages``` по умолчанию)
 * r5m.htmlFiles - список файлов из **tpl/**, которые будут скомпилированы в HTML-файлы
 * r5m.minifyHtml - если true, то генерируемые HTML-файлы будут еще и минифицированы.
 * r5m.clientVersion - тег (ветка) из репозитория [R5M Client](https://github.com/milikhin/r5m-client), соответствующая используемой версии клиентского движка. Возможные значения - **пустая строка** (соответствует ветке *master*), **v0.0.4**, **v0.0.5**, **v0.0.6**
