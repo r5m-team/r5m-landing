@@ -99,3 +99,8 @@
 .r5mFeedback__placeholder {
     font-size: 1.15rem;
 }
+
+.r5mFeedback__placeholder-top,
+.r5mFeedback__placeholder-top.r5mFeedback__placeholder--text {
+    font-size: 14px;
+}
