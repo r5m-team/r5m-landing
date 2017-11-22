@@ -27,6 +27,6 @@ module.exports = function () {
 		gulp.watch('bower_components/**/*.css', ['css-watch']);
 		gulp.watch('bower_components/**/*.js', ['js-watch']);
 		gulp.watch('tpl/**/*.ejs', ['html-watch']);
-		gulp.watch('bower_components/r5m-cms/**/*.ejs', ['html-watch']);
+		gulp.watch('bower_components/r5m-client/**/*.ejs', ['html-watch']);
 	};
 };

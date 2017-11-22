@@ -1,0 +1,33 @@
+.row.auready-wrapper {
+    background: url('/images/3.jpg') no-repeat;
+    background-position: center top;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+.row.auready2-wrapper {
+    background: url('/images/4.jpg') no-repeat;
+    background-position: top center;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+}
+
+.auready {
+    background: rgba(0,0,0,0.65);
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+}
+
+.auready .p-card {
+    background: none;
+    border-color: white;
+    color: white;
+}
+
+.auready2 {
+    min-height: 100vh;
+    background: rgba(0,0,0,0.70);
+}

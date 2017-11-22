@@ -1,0 +1,42 @@
+.carousel__dots {
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+}
+
+.carousel__dots__dot {
+    display: inline-block;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel__dots__dot {
+    height: 7px;
+    width: 7px;
+}
+
+.carousel__dots__dot--active {
+    background: rgb(255, 200, 0);
+}
+
+.slider-item {
+    background: rgba(220,220,220,0.4);
+}
+
+.slider-item .p-heading--four {
+    white-space: normal;
+}
+
+.reviews-wrapper {
+    padding-bottom: 60px;
+}
+
+.review__content {
+    padding-left: 40px;
+}
+
+.slider-item .r5m-gallery-img {
+    margin: 0;
+}

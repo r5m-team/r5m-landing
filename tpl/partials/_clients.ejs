@@ -1,0 +1,401 @@
+<% 
+var certificates = [
+    {
+        image: "cert0.jpg",
+        alt: "Описание 1"
+    }, {
+        image: "cert1.jpg",
+        alt: "Описание 1"
+    }, {
+        image: "cert2.jpg",
+        alt: "Описание 1"
+    }, {
+        image: "cert3.jpg",
+        alt: "Описание 1"
+    }, {
+        image: "cert4.jpg",
+        alt: "Описание 1"
+    }
+];
+var reviews = [
+    {
+        photo: {
+            src: "100.jpg",
+            alt: "descr"
+        },
+        content: ` <p> 15 сентября 2017г по
+заявке МКОУ &laquo;Школа-интернат №4&raquo; для проведения периодических аэродинамеческих испытаний
+приезжал Ваш специалист, Кутковский Александр Евгеньевич. </p> <p> Были осмотрены все помещения
+здания школы, сделаны замеры аэродинамических испытаний. Во время работы специалистом были даны
+советы по правильной эксплуатации системы вентиляции. В результате был оформлен и подписан протокол.
+</p> <p> Хочется отметить профессионализм Вашего сотрудника, его корректность в общении с клиентами.
+<b>Нам было очень приятно сотрудничать с Вами. Спасибо.</b> </p> `,
+        title: `МКОУ
+&laquo;Школа-интернат №4&raquo;`
+    }, {
+        photo: {
+            src: "23.jpg",
+            alt: "descr"
+        },
+        content: ` <p class="editable"> МК ОУ Школа-сад №235 в лице
+директора Сафроновой Ольги Сергеевны выражает благодарность руководству ООО &laquo;ЦКО-СБ&raquo; и
+работникам Пульта Централизованного Наблюдения за профессиональную организацию работы по передаче
+сигнала в подразделение противопожарной службы. </p> <p> <b>Качеством работы довольны, планируем
+продолжать работу в дальнейшие годы.</b> </p> `,
+        title: `Школа-сад №235`
+    }, {
+        photo: {
+            src: "22.jpg",
+            alt: ""
+        },
+        content: ` <p class="editable"> Сотрудничаем с ООО &laquo;ЦКО-СБ&raquo; с
+2008г. ООО &laquo;ЦКО-СБ&raquo; осуществляли проектирование и установку в здании школы системы
+автоматической пожарной сигнализации и аварийного освещения. Вся документация была оформлена в
+соответствии с требованиями, были учтены особенности наших учащихся, предусмотрены виброустановки и
+световая сигнализация. </p> <p> Отдельно хочется отметить человеческие качества сотрудников ООО
+&laquo;ЦКО-СБ&raquo;. Работники всегда вежливы, выполняют работу быстро, не мешая учебному процессу,
+за собой убирают весь мусор, разъясняют технические вопросы. </p> <p> <b>В ООО &laquo;ЦКО-СБ&raquo;
+работают настоящие профессионалы, с которыми приятно иметь дело.</b> </p> `,
+        title: `Специальная
+школа-интернат №38`
+    }, {
+        photo: {
+            src: "20.jpg",
+            alt: ""
+        },
+        content: ` <p class="editable">
+Организация выражает искреннюю благодарность руководству и всему коллективу за профессионализм в
+решении вопросов обеспечения пожарной безопасности. </p> `,
+        title: `МБО ДУ &laquo;Станция юных
+натуралистов&raquo;`
+    }, {
+        photo: {
+            src: "21.jpg",
+            alt: ""
+        },
+        content: ` <p class="editable"> Средняя
+общеобразовательная школа №26 в лице директора Халето Татьяны Юрьевны выражает благодарность ООО
+&laquo;ЦКО-СБ&raquo; за качественное предоставлени комплекса услуг по техническому обслуживанию
+систем автоматической пожарной сигнализации и мониторинга ИСМ &laquo;Мираж&raquo; </p> <p> Выезд
+специалистов технического отдела на объекты осуществляется оперативно, в том числе и в
+нерегламентный период. Менеджеры по работе с клиентами &ndash; квалифицированы и доброжелательны.
+</p> <p> <b>Надеемся на дальнейшее сотрудничество наших организаций в 2017г.</b> </p> `,
+        title: `Средняя общеобразовательная школа №26`
+    }, {
+        photo: {
+            src: "19.jpg",
+            alt: ""
+        },
+        content: ` <p
+class="editable"> Выражаем исреннюю благодарность руководству и коллективу ПЦН ООО
+&laquo;ЦКО-СБ&raquo; за профессионализм и качественное решение вопросов по обеспечению пожарной
+безопасности. </p> <p> <b>Доброжелательные и отзывчивые сотрудники, результатами довольны.</b> </p>
+`,
+        title: `Детский дом &laquo;Единство&raquo;`
+    }, {
+        photo: {
+            src: "24.jpg",
+            alt: ""
+        },
+        content: ` <p
+class="editable"> МБОУ Средняя общеобразовательная школа №79 в лице директора Лебедевой Светланы
+Юрьевны выражает благодарность руководству ООО &laquo;ЦКО-СБ&raquo; за качественное предоставление
+комплекса услуг по техническому обслуживанию системы автоматической пожарной сигнализации и
+мониторинга ИСМ &laquo;Мираж&raquo; </p> <p> В процессе нашего сотрудничества специалисты
+технического отдела ООО &laquo;ЦКО-СБ&raquo; подтвердили свой высокий профессиональный статус и
+оперативность в решении проблем. Выезд специалистов технического отдела на объекты осуществляется
+оперативно, в том числе и в нерегламентный период. </p> <p> <b>Надеемся на дальнейшее сотрудничество
+наших организаций в 2017г.</b> </p> `,
+        title: `МБОУ Средняя общеобразовательная школа №79`
+    }
+];
+%>
+
+<div class="bg-wrapper">
+    <div class="cw cw-1"></div>
+    <div class="cw cw-2"></div>
+    <div class="cw cw-3"></div>
+    <div class="cw cw-4"></div>
+
+    <div class="row section clients-wrapper">
+        <div class="col-12">
+            <div class="p-content p-content--small">
+                <div class="u-align--center">
+                    <h2 class="subheading">
+                        Наши клиенты
+                    </h2>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-5 u-align--left">
+                            <ol class="p-list-step list__only-title">
+                                <li class="p-list-step__item">
+                                    <p class="p-list-step__title">
+                                        <span class="p-list-step__bullet">
+                                            <img class="list__check" src="/images/4.clients/check.png"/>
+                                        </span>
+                                        <strong class="u-no-margin--top">Управляющие компании, ТСЖ</strong>
+                                        Многоквартирные дома, жилые комплексы
+                                    </p>
+                                </li>
+                                <li class="p-list-step__item">
+                                    <p class="p-list-step__title">
+                                        <span class="p-list-step__bullet">
+                                            <img class="list__check" src="/images/4.clients/check.png"/>
+                                        </span>
+                                        <strong class="u-no-margin--top">Владельцы, арендаторы коммерческой недвижимости</strong>
+                                        Офисные и торговые центры, гостиницы, склады и т.д.
+                                    </p>
+                                </li>
+                                <li class="p-list-step__item">
+                                    <p class="p-list-step__title">
+                                        <span class="p-list-step__bullet">
+                                            <img class="list__check" src="/images/4.clients/check.png"/>
+                                        </span>
+                                        <strong class="u-no-margin--top">Промышленные предприятия</strong>
+                                        Шахты, заводы, фабрики, комбинаты, производства
+                                    </p>
+                                </li>
+                                <li class="p-list-step__item">
+                                    <p class="p-list-step__title">
+                                        <span class="p-list-step__bullet">
+                                            <img class="list__check" src="/images/4.clients/check.png"/>
+                                        </span>
+                                        <strong>Муниципальные учреждения</strong>
+                                        Школы, детские сады, больницы, дома творчества, школы искусств
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="col-6 u-align--left">
+                            <ol class="p-list-step list__only-title">
+                                <li class="p-list-step__item">
+                                    <p class="p-list-step__title">
+                                        <span class="p-list-step__bullet">
+                                            <img class="list__check" src="/images/4.clients/check.png"/>
+                                        </span>
+                                        <strong class="u-no-margin--top">Строители</strong>
+                                        Застройщики жилых комплексов, торговых и промышленных зданий и сооружений
+                                    </p>
+                                </li>
+                                <li class="p-list-step__item">
+                                    <p class="p-list-step__title">
+                                        <span class="p-list-step__bullet">
+                                            <img class="list__check" src="/images/4.clients/check.png"/>
+                                        </span>
+                                        <strong class="u-no-margin--top">Частная медицина</strong>
+                                        Медицинские и диагностические центры, стоматологии, мед. лаборатории и аптеки
+                                    </p>
+                                </li>
+                                <li class="p-list-step__item ">
+                                    <p class="p-list-step__title">
+                                        <span class="p-list-step__bullet">
+                                            <img class="list__check" src="/images/4.clients/check.png"/>
+                                        </span>
+                                        <strong class="u-no-margin--top">Предприятия общепита и досуга</strong>
+                                        Производства, рестораны, гостиницы, столовые, супермаркеты
+                                    </p>
+                                </li>
+                                <li class="p-list-step__item ">
+                                    <p class="p-list-step__title">
+                                        <span class="p-list-step__bullet">
+                                            <img class="list__check" src="/images/4.clients/check.png"/>
+                                        </span>
+                                        <strong>Спортивные учреждения</strong>
+                                        Фитнес-центры, стадионы, дворцы спорта, бассейны
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row license-wrapper">
+        <div class="col-12">
+            <div class="p-content">
+                <div class="u-align--center">
+                    <h2 class="subheading">
+                        Наши лицензии и сертификаты
+                    </h2>
+                    <div class="u-hide--large u-hide--medium certificate-carousel carousel gallery-container" data-manual="true">
+                        <ul>                            
+                            <% for (var i = 0; i < certificates.length; i++) { %>
+                                <li style="display: none;">
+                                    <div class="certificate_item">
+                                        <div
+                                            class="about__license-container r5m-gallery-link"
+                                            data-href="/images/5.licenses/<%= certificates[i].image %>">
+                                            <div
+                                                class="r5m-gallery-img about__license__shadow"
+                                                data-href="/images/5.licenses/<%= certificates[i].image %>">
+                                                <div class="about__license__loupe">
+                                                    <i class="fa fa-plus"></i>
+                                                </div>
+                                                <img
+                                                    src="/images/5.licenses/<%= certificates[i].image %>"
+                                                    alt="<%= certificates[i].alt %>"
+                                                    data-alt="<%= certificates[i].alt %>"/>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li><%
+                        -%><% } %>                            
+                        </ul>
+                        <span class="carousel__left-button">
+                            <img src="/images/5.licenses/la.png"/>
+                            <img class="is-hover" src="/images/5.licenses/la--hover.png"/>
+                        </span>
+                        <span class="carousel__right-button">
+                            <img src="/images/5.licenses/ra.png"/>
+                            <img class="is-hover" src="/images/5.licenses/ra--hover.png"/>
+                        </span>
+                    </div>
+                    <div class="u-show--large certificate-carousel carousel gallery-container mobile-hidden" data-manual="true">
+                        <ul>
+                            <li style="display: none;">
+                                <% for (var i = 0; i < certificates.length; i++) { %>
+                                    <% if(i % 3 == 0 && i !== 0) { %>
+                                    </li>
+                                    <li style="">
+                                    <% } %><%
+                                -%>
+                                    <div class="certificate_item">
+                                        <div
+                                            class="about__license-container r5m-gallery-link"
+                                            data-href="/images/5.licenses/<%= certificates[i].image %>">
+                                            <div
+                                                class="r5m-gallery-img about__license__shadow"
+                                                data-href="/images/5.licenses/<%= certificates[i].image %>">
+                                                <div class="about__license__loupe">
+                                                    <i class="fa fa-plus"></i>
+                                                </div>
+                                                <img
+                                                    src="/images/5.licenses/<%= certificates[i].image %>"
+                                                    alt="<%= certificates[i].alt %>"
+                                                    data-alt="<%= certificates[i].alt %>"/>
+                                            </div>
+                                        </div>
+                                    </div><%
+                            -%><% } %>
+                            </li>
+                        </ul>
+                        <span class="carousel__left-button">
+                            <img src="/images/5.licenses/la.png"/>
+                            <img class="is-hover" src="/images/5.licenses/la--hover.png"/>
+                        </span>
+                        <span class="carousel__right-button">
+                            <img src="/images/5.licenses/ra.png"/>
+                            <img class="is-hover" src="/images/5.licenses/ra--hover.png"/>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row reviews-wrapper">
+        <div class="col-12">
+            <div class="p-content">
+                <div class="u-align--center">
+                    <h2 class="subheading">
+                        Отзывы наших клиентов
+                    </h2>
+                    <div class="items-carousel gallery-container carousel news-carousel">
+                        <ul><!--remove space between inline-block elems
+                        --><% for (var i=0; i < reviews.length; i++) { -%>
+                            <!--
+                          -->
+                            <li style="">
+                                <div class="slider-item row">
+                                    <% if (reviews[i].photo) { %>
+                                        <div class="col-3">
+                                            <div
+                                                class="about__license-container r5m-gallery-link"
+                                                data-href="/images/6.reviews/<%= reviews[i].photo.src %>">
+                                                <div
+                                                    class="r5m-gallery-img about__license__shadow"
+                                                    data-href="/images/6.reviews/<%= reviews[i].photo.src %>">
+                                                    <div class="about__license__loupe">
+                                                        <i class="fa fa-plus"></i>
+                                                    </div>
+                                                    <img
+                                                        data-href="/images/6.reviews/<%= reviews[i].photo.src %>"
+                                                        class="r5m-gallery-img"
+                                                        src="/images/6.reviews/<%= reviews[i].photo.src %>"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <% } %>
+                                    <div class="col-9 review__content">
+                                        <div class="review__content__text u-align--left">
+                                            <%- reviews[i].content %>
+                                        </div>
+                                        <div class="u-align--left p-heading--four">
+                                            <%- reviews[i].title %>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--remove space between inline-block elems
+                            -->
+                        <% } %>
+                    	</ul>
+                        <span class="carousel__left-button">
+                            <img src="/images/5.licenses/la.png"/>
+                            <img class="is-hover" src="/images/5.licenses/la--hover.png"/>
+                        </span>
+                        <span class="carousel__right-button">
+                            <img src="/images/5.licenses/ra.png"/>
+                            <img class="is-hover" src="/images/5.licenses/ra--hover.png"/>
+                        </span>
+                        <span class="carousel__dots"></span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    function setCarouselHeight() {
+        var carouselItems = document.querySelectorAll('.items-carousel .carousel__item .slider-item');
+        var maxHeight = 0;
+        carouselItems.forEach(function (carouselItemElem) {
+            carouselItemElem.style.minHeight = "0";
+        });
+
+        carouselItems.forEach(function (carouselItemElem) {
+            maxHeight = carouselItemElem.offsetHeight > maxHeight
+                ? carouselItemElem.offsetHeight
+                : maxHeight;
+        });
+
+        carouselItems.forEach(function (carouselItemElem) {
+            carouselItemElem.style.minHeight = maxHeight + "px";
+        });
+
+        return maxHeight;
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var loadInt = setInterval(function () {
+            var maxHeight = setCarouselHeight();
+            if (maxHeight > 0) {
+                clearInterval(loadInt);
+            }
+        }, 1000);
+    });
+
+    var waitTimeout = null;
+    window.addEventListener('resize', function () {
+        if (waitTimeout) {
+            clearTimeout(waitTimeout);
+        }
+        waitTimeout = setTimeout(function () {
+            setCarouselHeight();
+        }, 1000);
+    });
+</script>

@@ -1,0 +1,10 @@
+<%
+	var parts = ['_header', '_header2', '_care', '_numbers', '_garanty', '_wedo', '_offer', '_clients', '_offer2', '_forms', '_footer', '_metrika'];
+%>
+<div class="row p-row__main">
+    <div class="col-12 p-layout__main">
+    	<% for(var i = 0; i < parts.length; i++) { %>
+        	<%- include(parts[i]) %>
+        <% } %>
+    </div>
+</div>

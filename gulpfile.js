@@ -2,7 +2,7 @@
 
 var gulp = require('gulp');
 var options = {
-	packageJson: require('./package')
+    packageJson: require('./package')
 };
 
 var jsBuilder = require('./src/tasks/js-build');
@@ -19,7 +19,9 @@ gulp.task('css', cssBuilder());
 gulp.task('html', htmlBuilder(options));
 gulp.task('assets', copyOnly());
 
-gulp.task('daemon', ['js', 'css', 'html', 'assets'], daemon());
+gulp.task('daemon', [
+    'js', 'css', 'html', 'assets'
+], daemon());
 gulp.task('deploy', ghDeploy(options));
 gulp.task('install', install(options));
 

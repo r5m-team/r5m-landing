@@ -1,95 +1,149 @@
 <%# feedback forms %>
 <div class="r5m-dimmer">
-  <div class="r5m-dimmer__container">
+    <div class="r5m-dimmer__container">
 
-    <%# Thanks form %>
-    <div class="r5m-dimmer-wrapper r5m-dimmer-thanks hidden">
-      <form onsubmit="return false;">
-        <h2>
-          Спасибо!
-        </h2>
-        <p>
-          Мы свяжемся с Вами по указанному
-          <br/>Email-адресу или телефону
-          <br/>в ближайшее время.
-        </p>
-        <button class="r5m-action r5m-dimmer-thanks__button" data-action="r5mDimmer-close" type="submit">
-          Ок
-        </button>
-      </form>
-    </div>
+        <%# Thanks form %>
+        <div class="r5m-dimmer-wrapper r5m-dimmer-thanks hidden">
+            <form onsubmit="return false;">
+                <h2>
+                    Спасибо!
+                </h2>
+                <p>
+                    Мы свяжемся с Вами по указанному
+                    Email-адресу или телефону
+                    в ближайшее время.
+                </p>
+                <button class="r5m-action r5m-dimmer-thanks__button" data-action="r5mDimmer__close" type="submit">
+                    Ок
+                </button>
+            </form>
+        </div>
 
-    <%# Oops form %>
-    <div class="r5m-dimmer-wrapper r5m-dimmer-oops hidden">
-      <form onsubmit="return false;">
-        <h2>
-          Ой :-(
-        </h2>
-        <p>
-          К сожалению, Ваше сообщение не было отправлено из-за ошибки.
-          <br/>Приносим извинения за доставленные неудобства
-          <br/>Пожалуйста, свяжитесь с нами
-          <a class="r5m-dimmer__link" href="contacts.html">любым другим способом</a>,
-          <br/>и мы с радостью ответим на все Ваши вопросы.
-        </p>
-        <button class="r5m-action r5m-dimmer-thanks__button" data-action="r5mDimmer-close" type="submit">
-          Ок
-        </button>
-      </form>
-    </div>
+        <%# Oops form %>
+        <div class="r5m-dimmer-wrapper r5m-dimmer-oops hidden">
+            <form onsubmit="return false;">
+                <h2>
+                    Ой :-(
+                </h2>
+                <p>
+                    К сожалению, Ваше сообщение не было отправлено из-за ошибки.
+                    <br/>Приносим извинения за доставленные неудобства
+                    <br/>Пожалуйста, свяжитесь с нами любым другим способом,
+                    <br/>и мы с радостью ответим на все Ваши вопросы.
+                </p>
+                <p>
+                    телефон:
+                    <a class="r5m-dimmer__link" href="+73843200206">+7 (3843) 200-206</a><br/>
+                    email:
+                    <a class="r5m-dimmer__link" href="mailto:cko-sb@mail.ru">cko-sb@mail.ru</a>
+                </p>
+                <button class="r5m-action r5m-dimmer-thanks__button" data-action="r5mDimmer__close" type="submit">
+                    Ок
+                </button>
+            </form>
+        </div>
 
-    <%# Call form %>
-    <div class="r5m-dimmer-wrapper r5m-dimmer-call hidden">
-      <div class="r5mFeedback">
-        <form action="/feedback" class="r5mFeedback__form" data-metrika-goal="r5m-call-me">
-          <button class="r5mFeedback__close-button r5m-action" data-action="r5mDimmer-close" type="button">
-            <i class="fa fa-times"></i>
-          </button>
-          <h2 class="r5mFeedback__form__header">Заказать звонок</h2>
-          <label class="r5mFeedback__label">
-            <span class="r5mFeedback__placeholder">Введите Ваше имя*</span>
-            <input class="r5mFeedback__input" name="name" required type="text"/>
-          </label>
-          <label class="r5mFeedback__label">
-            <span class="r5mFeedback__placeholder">Телефон*</span>
-            <input class="r5mFeedback__input" name="phone" required type="text"/>
-          </label>
-          <button class="r5mFeedback__submit-button submit-button" type="submit">
-            Заказать звонок
-          </button>
-        </form>
-      </div>
-    </div>
+        <%# Call form %>
+        <div class="r5m-dimmer-wrapper r5m-dimmer-call hidden">
+            <div class="r5mFeedback">
+                <form action="/feedback" class="r5mFeedback__form" data-metrika-goal="r5m-call-me">
+                    <button class="r5mFeedback__close-button r5m-action" data-action="r5mDimmer__close" type="button">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <h2 class=" p-heading--two">Заказать звонок</h2>
+                    <p class="u-align--center">
+                        Наш специалист свяжется с вами для консультации в ближайшее время
+                    </p>
+                    <label class="r5mFeedback__label">
+                        <span class="r5mFeedback__placeholder">Введите Ваше имя*</span>
+                        <input class="r5mFeedback__input" name="name" required type="text"/>
+                    </label>
+                    <label class="r5mFeedback__label">
+                        <span class="r5mFeedback__placeholder">Телефон*</span>
+                        <input class="r5mFeedback__input" name="phone" required type="text"/>
+                    </label>
+                    <p style="color: black; text-align: left; font-size: 0.9em; margin: 10px 0 5px;">
+                    	<input type="checkbox" checked onchange="this.closest('form').querySelector('.submit-button').disabled=!this.checked"/>
+                        Я согласен на обработку персональных данных, принимаю условия <a style="color: inherit" target="_blank" href="/images/eua.pdf">пользовательского соглашения</a>
+                    </p>
+                    <p class="i-agree">
+                    	<input name="eua" type="checkbox" checked onchange="this.closest('form').querySelector('.submit-button').disabled=!this.checked" />
+                        Я согласен на обработку пер<wbr/>со<wbr/>нальных данных, принимаю условия <a style="color: inherit" target="_blank" href="/images/eua.pdf">поль&shy;зова&shy;тель&shy;ского соглашения</a>
+                    </p>
+                    <button class="button-cko p-button--brand submit-button" type="submit">
+                        Отправить заявку
+                    </button>
+                </form>
+            </div>
+        </div>
 
-    <%# Order form %>
-    <div class="r5m-dimmer-wrapper r5m-dimmer-order hidden">
-      <div class="r5mFeedback">
-        <form action="/feedback" class="r5mFeedback__form" data-metrika-goal="r5m-order">
-          <button class="r5mFeedback__close-button r5m-action" data-action="r5mDimmer-close" type="button">
-            <i class="fa fa-times"></i>
-          </button>
-          <h2 class="r5mFeedback__form__header">Оставить заявку</h2>
-          <label class="r5mFeedback__label">
-            <span class="r5mFeedback__placeholder">Введите Ваше имя*</span>
-            <input class="r5mFeedback__input" name="name" required="" type="text">
-          </label>
-          <%# <label class="r5mFeedback__label">
-            <span class="r5mFeedback__placeholder">Телефон*</span>
-            <input class="r5mFeedback__input" name="phone" required="" type="text">
-          </label>%>
-          <label class="r5mFeedback__label">
-            <span class="r5mFeedback__placeholder">E-mail или телефон*</span>
-            <input class="r5mFeedback__input" name="email" type="text" required>
-          </label>
-          <label class="r5mFeedback__label">
-            <span class="r5mFeedback__placeholder">Вопросы или комментарии</span>
-            <textarea class="r5mFeedback__text" name="text"></textarea>
-          </label>
-          <button class="r5mFeedback__submit-button submit-button" type="submit">
-            Оставить заявку
-          </button>
-        </form>
-      </div>
+        <%# Order form %>
+        <div class="r5m-dimmer-wrapper r5m-dimmer-order hidden">
+            <div class="r5mFeedback">
+                <form action="/feedback" class="r5mFeedback__form" data-metrika-goal="r5m-call-me">
+                    <button class="r5mFeedback__close-button r5m-action" data-action="r5mDimmer__close" type="button">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <h2 class=" p-heading--two">Сделать заказ</h2>
+                    <p class="u-align--center">
+                        Наш специалист свяжется с вами для консультации или уточнения деталей заказа в ближайшее время
+                    </p>
+                    <label class="r5mFeedback__label">
+                        <span class="r5mFeedback__placeholder">Введите Ваше имя*</span>
+                        <input class="r5mFeedback__input" name="name" required type="text"/>
+                    </label>
+                    <label class="r5mFeedback__label">
+                        <span class="r5mFeedback__placeholder">Телефон*</span>
+                        <input class="r5mFeedback__input" name="phone" required type="text"/>
+                    </label>
+                    <label class="r5mFeedback__label">
+                        <span class="r5mFeedback__placeholder--text r5mFeedback__placeholder">Вопросы или комментарии</span>
+                        <textarea class="r5mFeedback__text" name="text"></textarea>
+                    </label>
+                    <p class="i-agree">
+                    	<input name="eua" type="checkbox" checked onchange="this.closest('form').querySelector('.submit-button').disabled=!this.checked" />
+                        Я согласен на обработку пер<wbr/>со<wbr/>нальных данных, принимаю условия <a style="color: inherit" target="_blank" href="/images/eua.pdf">поль&shy;зова&shy;тель&shy;ского соглашения</a>
+                    </p>
+                    <button class="button-cko p-button--brand submit-button" type="submit">
+                        Отправить заявку
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <%# Ask question form %>
+        <div class="r5m-dimmer-wrapper r5m-dimmer-ask hidden">
+            <div class="r5mFeedback">
+                <form action="/feedback" class="r5mFeedback__form" data-metrika-goal="r5m-order">
+                    <button class="r5mFeedback__close-button r5m-action" data-action="r5mDimmer__close" type="button">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <h2 class="r5mFeedback__form__header">Задать вопрос</h2>
+                    <p class="u-align--center">
+                        Наш специалист свяжется с вами для консультации в ближайшее время.
+                    </p>
+                    <label class="r5mFeedback__label">
+                        <span class="r5mFeedback__placeholder">Введите Ваше имя*</span>
+                        <input class="r5mFeedback__input" name="name" required="" type="text"/>
+                    </label>
+
+                    <label class="r5mFeedback__label">
+                        <span class="r5mFeedback__placeholder">E-mail или телефон*</span>
+                        <input class="r5mFeedback__input" name="email" type="text" required/>
+                    </label>
+                    <label class="r5mFeedback__label">
+                        <span class="r5mFeedback__placeholder--text r5mFeedback__placeholder">Вопросы или комментарии</span>
+                        <textarea class="r5mFeedback__text" name="text"></textarea>
+                    </label>
+                    <p class="i-agree">
+                    	<input name="eua" type="checkbox" checked onchange="this.closest('form').querySelector('.submit-button').disabled=!this.checked" />
+                        Я согласен на обработку пер<wbr/>со<wbr/>нальных данных, принимаю условия <a style="color: inherit" target="_blank" href="/images/eua.pdf">поль&shy;зова&shy;тель&shy;ского соглашения</a>
+                    </p>
+                    <button class="button-cko p-button--brand submit-button" type="submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
     </div>
-  </div>
 </div>

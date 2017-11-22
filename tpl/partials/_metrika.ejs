@@ -1,1 +1,86 @@
-<%# Include your metrics' scripts here %>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_WMEfPtpoUCx0quYXbefJf");
+   })();
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter27971169 = new Ya.Metrika({
+                    id:27971169,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/27971169" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77067828-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script>
+	function amoCrmIntegration() {
+        [].forEach.call(document.querySelectorAll('.r5mFeedback__form'), function(formElem) {
+            var amoCrmUrl = "http://siteprosto.ru/api/amo.crm/cko-sb.ru/amocrm_api.php?utm_s=" + getUrlParam('utm_source') + "&utm_m=" + getUrlParam('utm_medium') + "&utm_c=" + getUrlParam('utm_campaign');
+          
+            formElem.addEventListener('submit', function(evt) {
+                var data = {};
+                [].forEach.call(formElem, function(field) {
+                    var name = field.getAttribute('name');
+                    if (formElem[name]) {
+                        data[name] = field.value;
+                    }
+                });
+                console.log(data);
+                // return;
+                require(['vendor/qwest/qwest.min'], function(xhr) {
+                    xhr.post(amoCrmUrl, data, {
+                        cache: true,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+                });
+            });
+
+        });
+    }
+
+    function getUrlParam(key) {
+        var results = new RegExp('[\?&]' + key + '=([^&#]*)').exec(window.location.href);
+        if (results == null) {
+            return null;
+        } else {
+            return results[1] || 0;
+        }
+    }
+    
+    amoCrmIntegration();
+</script>

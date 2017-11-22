@@ -1,34 +1,36 @@
-<section class="offer clearfix">
-  <div class="flexible-container">
-    <div class="offer__feedback-wrapper">
-      <div class="offer__feedback">
-        <h2 class="offer__title">
-          Заполните форму
-        </h2>
-        <h3 class="offer__subtitle">
-          и получите ...
-        </h3>
-        <div class="r5mFeedback offer__feedback__form">
-          <form action="/feedback" class="r5mFeedback__form">
-            <label class="r5mFeedback__label">
-              <span class="r5mFeedback__placeholder">Введите Ваше имя*</span>
-              <input class="r5mFeedback__input" name="name" required type="text" />
-            </label>
-            <%# <label class="r5mFeedback__label">
-              <span class="r5mFeedback__placeholder">Телефон*</span>
-              <input class="r5mFeedback__input" name="phone" required type="text" />
-            </label>%>
-            <label class="r5mFeedback__label last">
-              <span class="r5mFeedback__placeholder">E-mail или телефон*</span>
-              <input class="r5mFeedback__input" name="email" type="text" required />
-            </label>
-            <button class="r5mFeedback__submit-button submit-button r5m-action" type="submit">
-              <%# <i class="fa fa-check"></i> %>
-              Получить консультацию
-            </button>
-          </form>
+<div class="row u-align--center auready-wrapper">
+    <div class="col-12 auready">
+        <div class="row section">
+            <div class="auready__really">
+                <div class="p-card">
+                    <h2 class="p-card__title">
+                        Насколько вы готовы к визиту пожарного инспектора?
+                    </h2>
+                    <p class="subheading">
+                        <%# Пройдите наш тест и узнайте, что нужно сделать, чтобы избежать штрафа %>
+                        Узнайте, что нужно сделать, чтобы избежать штрафа
+                    </p>
+                    <div class="r5mFeedback offer__feedback__form">
+                        <form action="/feedback" class="r5mFeedback__form">
+                            <label class="r5mFeedback__label">
+                                <span class="r5mFeedback__placeholder">Введите ваше имя*</span>
+                                <input class="r5mFeedback__input" name="name" required type="text"/>
+                            </label>
+                            <label class="r5mFeedback__label last">
+                                <span class="r5mFeedback__placeholder">E-mail или телефон*</span>
+                                <input class="r5mFeedback__input" name="email" type="text" required/>
+                            </label>
+							<p class="i-agree">
+                                <input name="eua" type="checkbox" checked onchange="this.closest('form').querySelector('.submit-button').disabled=!this.checked" />
+                                Я согласен на обработку пер<wbr/>со<wbr/>нальных данных, принимаю условия <a style="color: inherit" target="_blank" href="/images/eua.pdf">поль&shy;зова&shy;тель&shy;ского соглашения</a>
+                            </p>
+                            <button class="p-button p-button--wide p-button--brand r5m-action submit-button" type="submit">
+                                Отправить заявку
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-</section>
+</div>

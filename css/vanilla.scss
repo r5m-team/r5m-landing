@@ -1,0 +1,6 @@
+// Optionally override some settings
+$color-brand: #ffffff;
+$font-base-family: '"Open Sans", sans-serif';
+$grid-max-width: 1140px;
+// Import the theme
+@import 'vanilla-framework/scss/build';

@@ -1,0 +1,40 @@
+.numbers .p-card {
+    border: none;
+    background: none;
+}
+
+.row.numbers-wrapper {
+    background: url('/images/2.jpg') no-repeat;
+    background-position: center top;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    background-attachment: fixed;
+    /*     height: 100vh; */
+}
+
+.numbers {
+    background: rgba(0,0,0,0.75);
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+    padding: 9vh 0;
+    /*     height: 100%; */
+}
+
+.numbers .subheading {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 4vh;
+}
+
+.numbers .p-card {
+    color: white;
+}
+
+.numbers .p-card__content {
+    margin-top: 10px;
+}
+
+.numbers .p-card__title {
+    font-weight: 600;
+}

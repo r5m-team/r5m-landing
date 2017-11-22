@@ -1,0 +1,34 @@
+.wedo {
+    background: url('/images/3.services/bg_2.png') no-repeat;
+    background-position: center top;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+}
+.wedo .p-list-step__bullet {
+    background: none;
+    /*     max-height: 75px; */
+}
+
+.wedo .p-list-step__bullet img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.wedo .p-list-step__item {
+    margin-bottom: 40px;
+}
+
+.col-6:first-child .p-list-step.list__only-title {
+  	padding-right: 40px;
+}
+
+.p-list-step.list__only-title {
+  	margin-left: 70px;
+}
+
+.p-list-step__bullet {
+  	margin-left: -70px;
+}

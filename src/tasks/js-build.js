@@ -11,9 +11,9 @@ module.exports = function () {
 			optimize=uglify2 \
 			normalizeDirDefines=skip \
 			baseUrl=. \
-			paths.r5m=bower_components/r5m-cms/js \
+			paths.r5m=bower_components/r5m-client/js \
 			paths.vendor=bower_components \
-			name=bower_components/r5m-cms/js/index \
+			name=bower_components/r5m-client/js/index \
 			out=dist/engine/lp.js'
 			]))
 			.pipe(gulp.dest('./dist/engine'));

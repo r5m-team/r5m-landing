@@ -1,1 +1,19 @@
 /* Project imports goes here */
+@import 'fa/font-awesome.min.css';
+@import 'vanilla.css';
+
+/* Parts */
+@import 'animation.css';
+@Import 'images.css';
+@import 'main.css';
+@import 'header.css';
+@import 'numbers.css';
+@import 'garanty.css';
+@import 'wedo.css';
+@import 'auready.css';
+@import 'clients.css';
+@import 'license.css';
+@import 'reviews.css';
+@import 'forms.css';
+@import 'footer.css';
+@import 'mobile.css';

@@ -1,0 +1,49 @@
+.bg-wrapper {
+    position: relative;
+    margin: 0;
+}
+
+.cw {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    margin: 0;
+    overflow: hidden;
+}
+
+.cw-1 {
+    background: url('/images/tl_2.png') no-repeat;
+    background-position: left top;
+    background-size: 250px auto;
+}
+
+.cw-2 {
+    background: url('/images/tr_2.png') no-repeat;
+    background-position: right top;
+    background-size: 200px auto;
+}
+
+.cw-3 {
+    background: url('/images/bl_2.png') no-repeat;
+    background-position: left center;
+    background-size: 150px auto;
+}
+
+.cw-4 {
+    background: url('/images/br_2.png') no-repeat;
+    background-position: right bottom;
+    background-size: 100% auto;
+    width: 45%;
+    left: auto;
+    top: 800px;
+}
+
+.clients-wrapper .p-list-step__bullet {
+    background: rgb(255, 200, 0);
+    color: black;
+}
+
+

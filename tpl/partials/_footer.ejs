@@ -1,27 +1,59 @@
-<footer class="footer">
-  <div class="footer-wrapper">
-    <div class="flexible-container clearfix">
-      <div class="copyleft">
-        <p class="copyright__contact">&copy;
-          <%= info.year %>,
-          <%= info.copyright %></p>
-        <p class="copyright__contact"><%= info.city %></p>
-        <br/>
-        <p class="copyright__contact">
-          <span class="copyright__contact__label">телефон:</span>
-          <a href="tel:<%= info.phoneLink %>"><%- info.phone %></a>
-        </p>
-        <p class="copyright__contact">
-          <span class="copyright__contact__label">email:</span>
-          <a href="mailto:<%= info.email %>"><%= info.email %></a>
-        </p>
-      </div>
-      <div class="madein clearfix">
-        <p>
-          Сделано в
-          <a target="_blank" href="https://r5m.me">R5M group</a>
-        </p>
-      </div>
+<footer class="row footer">
+    <div class="col-12">
+        <div class="p-content">
+            <div class="row">
+                <div class="col-6">
+                    <p style="font-size: 0.9em; color: #ddd; line-height: 1.25em; max-width: 600px;">
+                        Находясь на сайте, вы соглашаетесь с тем, что данный сайт собирает метаданные клиентов,
+                        обрабатываемые в соответствии с
+                        <a style="color: inherit; text-decoration: underline" target="_blank" href="/images/eua.pdf">соглашением об обработке персональных данных</a>.
+                        Если вы не согласны со сбором метаданных сайтом, покиньте его. В противном случае вы принимаете
+                        соглашение об обработке персональных данных.
+
+                    </p>
+                </div>
+                <div class="col-6 footer__links" style="font-size:0.9em;">
+                    <p>
+                        <a target="_blank" href="/images/pd.pdf" class="webmaster-link">Политика обработки персональных данных
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                    </p>
+                    <p class="u-no-margin--top">
+                        <a target="_blank" href="/images/eua.pdf" class="webmaster-link">Пользовательское соглашение
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                    </p>
+                    <p class="u-no-margin--top">
+                        <a target="_blank" href="https://milikhin.name/index_ru.html" class="webmaster-link">Разработка и сопровождение сайта
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1 footer__logo">
+                    <img src="images/7.footer/logo.png"/>
+                </div>
+                <div class="col-11">
+                    <p class="u-no-margin--top">
+                        &copy; 2017, Центр комплексного обслуживания систем безопасности
+                    </p>
+                    <p class="u-no-margin--top">
+                        г. Новокузнецк, ул. Площадь побед, 2
+                    </p>
+                    <p class="u-no-margin--top">
+                        <a href="tel:+72843200206">8&nbsp;(3843)&nbsp;200-206</a>, круглосуточно
+                    </p>
+                    <p class="u-no-margin--top">
+                        <a href="mailto:cko-sb@mail.ru">cko-sb@mail.ru</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </footer>
+
+<script src="/js/smooth-scroll.min.js"></script>
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+</script>

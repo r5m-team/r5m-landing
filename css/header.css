@@ -1,0 +1,155 @@
+.c2a-wrapper {
+    /*     height: 30px; */
+}
+.c2a {
+    color: #111;
+    padding-left: 30px;
+    background: url('/images/1.header/call.png') no-repeat;
+    background-position: left center;
+    background-size: auto 20px;
+    display: inline-block;
+    margin: 0 40px 0 0;
+}
+
+.c2a--ask {
+    background-image: url('/images/1.header/ask.png');
+    padding-left: 37px;
+    background-size: auto 17px;
+}
+
+.row.header-wrapper {
+    background: url('/images/1.jpg') no-repeat;
+    background-position: center top;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+}
+
+.header {
+    background: rgba(0,0,0,0.75);
+    color: white;
+    height: calc(100vh - 100px);
+    min-height: 450px;
+    position: relative;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+
+}
+
+.header__button {
+    /*     margin: 4.5rem 0 140px; */
+}
+
+.header-scroll {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    background: url('/images/1.header/white-stripe.png') no-repeat;
+    background-position: center top;
+    height: 50px;
+
+}
+
+.header-scroll .p-button--base {
+    color: white;
+    background: none;
+    padding: 10px;
+    min-width: 30px;
+    height: 30px;
+    position: relative;
+    top: -10px;
+    background: url('/images/1.header/arrow.png') no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+}
+
+.header-scroll::before {
+    display: block;
+    position: absolute;
+    background: white;
+    left: -10000px;
+    width: 10000px;
+    content: " ";
+    height: 50px;
+    bottom: 0;
+}
+
+.header-scroll::after {
+    display: block;
+    position: absolute;
+    background: white;
+    left: 100%;
+    width: 10000px;
+    content: " ";
+    height: 50px;
+    bottom: 0;
+}
+
+.p-logo {
+    z-index: 1;
+    height: 100px;
+    position: relative;
+    text-align: center;
+}
+
+.p-logo__container {
+    border-radius: 50%;
+    background: white;
+    height: 135%;
+    display: inline-block;
+    width: 140px;
+    padding: 15px;
+    max-width: 100%;
+}
+
+.p-logo__container img {
+    height: 100%;
+    width: auto;
+}
+
+.header--one {
+    margin-bottom: 5vh;
+    font-size: 4.25vh;
+}
+
+.header--two {
+    margin-bottom: 15vh;
+    font-size: 2.5vh;
+}
+
+.row .p-button--brand {
+    background: rgb(255, 200, 0);
+    border-radius: 4px;
+    border: solid 2px #ffb919;
+}
+
+.header--three .p-button--brand {
+    background: rgb(255, 200, 0);
+    font-size: 2vh;
+    padding: 2vh 50px;
+    /*     font-weight: bold; */
+    border-radius: 4px;
+    border: solid 2px #ffb919;
+}
+@media screen and (max-height: 800px) {
+    .header--three .p-button--brand {
+        font-size: 1rem;
+        padding: 10px 50px;
+    }
+
+    .header--two {
+        font-size: 1.25rem;
+    }
+
+    .header--one {
+        font-size: 2.25rem;
+    }
+}
+
+.header__phone {
+    color: #111;
+    font-weight: bold;
+    font-size: 1.25rem;
+}

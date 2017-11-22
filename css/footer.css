@@ -1,0 +1,14 @@
+.row.footer {
+    background: #222;
+    margin: 0;
+    color: #fefefe;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #fefefe;
+}
+
+.footer__links {
+    text-align: right;
+}

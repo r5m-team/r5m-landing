@@ -1,0 +1,129 @@
+.row wbr {
+    margin: 0;
+}
+
+.row br {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+}
+.r5m-dimmer-thanks__button:hover {
+    background: #dedede;
+    color: #333;
+    border-color: #333;
+    cursor: pointer;
+}
+
+.r5m-dimmer-thanks__button {
+    background: none;
+}
+
+.row.section,
+.strip.section {
+    padding: 80px 0;
+    margin: 0 auto;
+}
+
+.color--brand {
+    color: rgb(255, 200, 0);
+}
+
+.p-row__main {
+    max-width: none;
+    padding: 0;
+}
+
+.row .p-layout__main {
+    margin: 0;
+}
+
+.p-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /*     position: relative; */
+}
+
+.p-content--small {
+    max-width: 990px;
+}
+
+.subheading {
+    margin: 2rem 0 3rem;
+}
+
+.col-1.col-margin {
+    width: 10.8%;
+}
+
+.list__only-title .p-list-step__bullet {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.list__only-title .p-list-step__item,
+.list__only-title .p-list-step__item:first-child {
+    margin: 0 0 20px;
+    min-height: 50px;
+}
+
+.p-list-step__item strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.p-button.p-button--wide {
+    width: 100%;
+}
+
+.image-zoomer {
+    margin: 0;
+}
+
+.r5mFeedback__input {
+    border: solid 1px rgb(205, 205, 205);
+    border-radius: 4px;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+.about__license__loupe::before {
+    content: "";
+    display: block;
+    background-image: url('/images/add.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.about__license__loupe i {
+    display: none;
+}
+
+.p-button--base.bounce {
+    outline: none;
+}
+
+.carousel .carousel__right-button {
+    margin: 0;
+}
+
+.list__check {
+    width: 25px;
+}
+
+
