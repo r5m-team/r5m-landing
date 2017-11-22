@@ -31,3 +31,8 @@
     min-height: 100vh;
     background: rgba(0,0,0,0.70);
 }
+
+.auready .i-agree,
+.auready2 .i-agree {
+    color: #ccc;
+}

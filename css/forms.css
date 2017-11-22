@@ -79,15 +79,11 @@
     max-width: 300px;
 }
 
-.i-agree {
+p.i-agree {
     text-align: left;
     font-size: 0.9em;
     margin: 15px 0 0;
-}
-
-.auready .i-agree,
-.auready2 .i-agree {
-    color: white;
+    color: #666;
 }
 
 [type="checkbox"],
