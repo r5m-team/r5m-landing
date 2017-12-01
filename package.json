@@ -15,7 +15,7 @@
     "deployTo": "",
     "deployToBranch": "gh-pages",
     "htmlFiles": [
-      "index"
+      "index", "test"
     ],
     "minifyHtml": true,
     "clientVersion": "v0.0.8"

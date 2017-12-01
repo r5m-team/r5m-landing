@@ -20,15 +20,19 @@
 .wedo .p-list-step__item {
     margin-bottom: 40px;
 }
-
 .col-6:first-child .p-list-step.list__only-title {
-  	padding-right: 40px;
+    padding-right: 40px;
 }
 
 .p-list-step.list__only-title {
-  	margin-left: 70px;
+    margin-left: 70px;
 }
 
 .p-list-step__bullet {
-  	margin-left: -70px;
+    margin-left: -70px;
+}
+
+.p-list-step__bullet.u-vertically-center {
+    align-items: center !important;
+    display: flex !important;
 }

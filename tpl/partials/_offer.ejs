@@ -8,25 +8,18 @@
                     </h2>
                     <p class="subheading">
                         <%# Пройдите наш тест и узнайте, что нужно сделать, чтобы избежать штрафа %>
-                        Узнайте, что нужно сделать, чтобы избежать штрафа
+                        Узнайте, насколько ваша компания готова к проверке надзорным органом, и что нужно сделать, чтобы избежать штрафа!
                     </p>
                     <div class="r5mFeedback offer__feedback__form">
-                        <form action="/feedback" class="r5mFeedback__form">
-                            <label class="r5mFeedback__label">
-                                <span class="r5mFeedback__placeholder">Введите ваше имя*</span>
-                                <input class="r5mFeedback__input" name="name" required type="text"/>
-                            </label>
-                            <label class="r5mFeedback__label last">
-                                <span class="r5mFeedback__placeholder">E-mail или телефон*</span>
-                                <input class="r5mFeedback__input" name="email" type="text" required/>
+                        <form action="/feedback" class="r5mFeedback__form" onsubmit="return false;">
                             </label>
 							<p class="i-agree">
-                                <input name="eua" type="checkbox" checked onchange="this.closest('form').querySelector('.submit-button').disabled=!this.checked" />
+                                <input name="eua" type="checkbox" checked onchange="this.closest('form').querySelector('.submit-button').href = this.checked ? './test.html' : ''"/>
                                 Я согласен на обработку пер<wbr/>со<wbr/>нальных данных, принимаю условия <a style="color: inherit" target="_blank" href="/images/eua.pdf">поль&shy;зова&shy;тель&shy;ского соглашения</a>
                             </p>
-                            <button class="p-button p-button--wide p-button--brand r5m-action submit-button" type="submit">
-                                Отправить заявку
-                            </button>
+                            <a href="./test.html" class="p-button p-button--wide p-button--brand r5m-action submit-button" type="submit">
+								Пройти тест
+                            </a>
                         </form>
                     </div>
                 </div>

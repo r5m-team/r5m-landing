@@ -49,7 +49,6 @@
     background: url('/images/1.header/white-stripe.png') no-repeat;
     background-position: center top;
     height: 50px;
-
 }
 
 .header-scroll .p-button--base {
@@ -154,4 +153,9 @@
     color: #111;
     font-weight: bold;
     font-size: 1.25rem;
+}
+
+.header__city {
+    font-size: 0.85em;
+    color: #666;
 }

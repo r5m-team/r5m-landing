@@ -36,3 +36,11 @@
 .auready2 .i-agree {
     color: #ccc;
 }
+
+.auready a {
+    text-shadow: none;
+}
+
+.auready__really a.p-button--brand {
+    margin-top: 10px;
+}
