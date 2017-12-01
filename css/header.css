@@ -134,6 +134,12 @@
     border-radius: 4px;
     border: solid 2px #ffb919;
 }
+
+.header--three .p-button--brand:hover {
+	background: #e4b200;
+  	border-color: #e4b200;
+}
+
 @media screen and (max-height: 800px) {
     .header--three .p-button--brand {
         font-size: 1rem;

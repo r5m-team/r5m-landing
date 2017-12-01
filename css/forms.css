@@ -40,6 +40,11 @@
     }
 }
 
+.auready__really .p-button--brand:hover {
+    background: #e4b200;
+    border-color: #e4b200;
+}
+
 .r5m-dimmer .r5mFeedback__close-button {
     top: 0;
     right: 7px;
@@ -104,4 +109,3 @@ p.i-agree {
 .r5mFeedback__placeholder-top.r5mFeedback__placeholder--text {
     font-size: 14px;
 }
-
